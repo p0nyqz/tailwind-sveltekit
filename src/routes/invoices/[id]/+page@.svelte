@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Dashboard from '../../../lib/layouts/Dashboard.svelte';
   export let data;
   console.log('====================================');
   console.log(data);
@@ -6,4 +7,4 @@
 
 </script>
 
-Invoice
+<Dashboard>Invoice</Dashboard>
