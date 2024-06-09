@@ -1,10 +1,10 @@
 <div class="grid grid-cols-12 gap-x-16 bg-whisper min-h-screen">
-  <header class="col-span-3 bg-daisyBush">
+  <header class="col-span-3 bg-daisyBush text-center">
     <div>
-      <a href="/invoices"><img src="" alt="" /></a>
+      <a href="/invoices"><img src="/images/logo.svg" alt="The Dollar Holler" class="mx-auto" /></a>
     </div>
   <nav>
-    <ul>
+    <ul class="list-none text-2xl font-bold font-sansSerif">
       <li><a href="/invoices">Invoices</a></li>
       <li><a href="/clients">Clients</a></li>
       <li><a href="#">Settings</a></li>
@@ -12,7 +12,16 @@
     </ul>
   </nav>
   </header>
-<main>
+<main class="col-span-8 pt-10">
   <slot></slot>
 </main>
 </div>
+
+<style lang="postcss">
+  nav ul li {
+    @apply mb-6;
+  }
+  nav ul li a{
+    @apply font-bold text-white hover:text-goldenFizz;
+  }
+</style>
