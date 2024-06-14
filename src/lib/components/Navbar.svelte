@@ -1,9 +1,17 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import Close from './Icon/Close.svelte';
+  import Hamburger from './Icon/Hamburger.svelte';
 </script>
 
+<!-- mobile nav control -->
+ <button class="fixed right-6 top-6">
+  <Close width={32} height={32} />
+  <Hamburger width={32} height={32} />
+ </button>
+
 <header class="col-span-3 bg-daisyBush text-center">
-  <div>
+  <div class="mt-10 mb-10">
     <a href="/invoices"><img src="/images/logo.svg" alt="The Dollar Holler" class="mx-auto" /></a>
   </div>
 <nav>
